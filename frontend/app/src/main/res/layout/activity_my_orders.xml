@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sender.MyOrdersActivity">
+
+    <TextView
+        android:id="@+id/title_my_orders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto"
+        android:text="My Orders"
+        android:textColor="#3F3F3F"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25sp"
+        android:layout_marginTop="10dp"
+        android:text="Cumulative Orders"
+        android:textColor="#3F3F3F"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_my_orders" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/myOrdersRecycleView"
+        android:layout_width="409dp"
+        android:layout_height="621dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <!--    <ListView-->
+<!--        android:id="@+id/listview"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/rv_orders"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="257dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView3" />-->
+
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tablayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/title" >-->
+
+<!--    </com.google.android.material.tabs.TabLayout>-->
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tablayout"-->
+<!--        />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

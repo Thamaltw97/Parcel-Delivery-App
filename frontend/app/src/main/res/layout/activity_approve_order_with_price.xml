@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rider.CurrentOrderActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="40dp"
+        android:text="Order Details"
+        android:textColor="#3F3F3F"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutOrderDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/yellow_stroke"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <TextView
+            android:id="@+id/tv_name_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_userid_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="user id"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_approve_order_details" />
+
+        <TextView
+            android:id="@+id/tv_order_id_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="order id"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_userid_approve_order_details" />
+
+        <TextView
+            android:id="@+id/tv_send_address_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="send address"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_order_id_approve_order_details" />
+
+        <TextView
+            android:id="@+id/tv_receive_address_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="pick address"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_send_address_approve_order_details" />
+
+        <TextView
+            android:id="@+id/tv_receive_phone_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="Phone"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_receive_address_approve_order_details" />
+
+        <TextView
+            android:id="@+id/tv_desc_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="description"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_receive_phone_approve_order_details" />
+
+        <TextView
+            android:id="@+id/tv_status_approve_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="status"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_approve_order_details" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:id="@+id/btn_get_order"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_marginLeft="25sp"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:layout_marginRight="25sp"-->
+    <!--        android:background="@drawable/yellow_stroke"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:gravity="center"-->
+    <!--            android:text="Get Order"-->
+    <!--            android:textColor="#3F3F3F"-->
+    <!--            android:textSize="22sp"-->
+    <!--            android:textStyle="bold" />-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <TextView
+        android:id="@+id/tv_driver_name_approve_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="driver name"
+        android:textSize="18sp" 
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutOrderDetails" />
+
+    <TextView
+        android:id="@+id/tv_loyalty_lvl_approve_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="loyalty level"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_driver_name_approve_order_details" />
+
+    <TextView
+        android:id="@+id/tv_discount_approve_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:text="discount"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_loyalty_lvl_approve_order_details" />
+
+    <TextView
+        android:id="@+id/tv_price_approve_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter the price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_discount_approve_order_details" />
+
+    <EditText
+        android:id="@+id/edit_price_approve_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        android:textColor="#A4A4A4"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_price_approve_order_details" />
+
+    <RelativeLayout
+        android:id="@+id/btn_approve_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/yellow_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_price_approve_order_details">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Approve the order"
+            android:textColor="#3F3F3F"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_driver_id_approve_order_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="12dp"
+        android:text="driver id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_driver_name_approve_order_details"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayoutOrderDetails" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

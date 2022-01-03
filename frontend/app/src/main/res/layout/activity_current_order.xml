@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rider.CurrentOrderActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25sp"
+        android:layout_marginTop="40dp"
+        android:text="Current Order Details"
+        android:textColor="#3F3F3F"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout_rider_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/yellow_stroke"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TextView
+            android:id="@+id/tv_name_assigned_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="Name :"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_id_assigned_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="ID :"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_assigned_order" />
+
+        <TextView
+            android:id="@+id/tv_send_address_assigned_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="80dp"
+            android:text="Send address :"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_id_assigned_order" />
+
+        <TextView
+            android:id="@+id/tv_receive_address_assigned_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="Receive address :"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_send_address_assigned_order" />
+
+        <TextView
+            android:id="@+id/tv_pick_phone_assigned_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="Phone :"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_receive_address_assigned_order" />
+
+        <TextView
+            android:id="@+id/tv_desc_assigned_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="80dp"
+            android:text="Description :"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_pick_phone_assigned_order" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/btn_get_order"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_marginLeft="25sp"-->
+<!--        android:layout_marginRight="25sp"-->
+<!--        android:background="@drawable/yellow_stroke"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_rider_current">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Get order"-->
+<!--            android:textColor="#3F3F3F"-->
+<!--            android:textSize="22sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--    </RelativeLayout>-->
+
+    <RelativeLayout
+        android:id="@+id/btn_at_door_steps"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/yellow_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout_rider_current">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="At door steps"
+            android:textColor="#3F3F3F"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btn_delivered"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25sp"
+        android:layout_marginRight="25sp"
+        android:background="@drawable/yellow_stroke"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_at_door_steps">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Delivered"
+            android:textColor="#3F3F3F"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
